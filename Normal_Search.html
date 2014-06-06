@@ -1,0 +1,259 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Normal Search</title>
+  <link rel="stylesheet" type="text/css" href="reset.css" /> 
+  <link rel="stylesheet" type="text/css" href="text.css" /> 
+  <link rel="stylesheet" type="text/css" href="960.css" /> 
+  <link rel="stylesheet" type="text/css" href="Normal_Search.css" /> 
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <!-- jQuery -->
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <!-- tmp css -->
+  <link rel="stylesheet" type="text/css" href="css/tmp.css">
+  <!--script type="text/javascript">
+    function MM_findObj(n, d) { //v4.01
+      var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+        d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+        if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+        for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+          if(!x && d.getElementById) x=d.getElementById(n); return x;
+      }
+    function MM_swapImgRestore() { //v3.0
+      var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+    }
+    function MM_preloadImages() { //v3.0
+      var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+        var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+        if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+      }
+
+    function MM_swapImage() { //v3.0
+      var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+      if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+    }
+  </script-->
+</head>
+<body>
+  <nav id="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container_12">
+	<div id="nav_item">
+	  <span><a href="">首頁</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
+	  <span id="present"><a href="">一般搜尋</a> </span>&nbsp;&nbsp;&nbsp;&nbsp;
+	  <span><a href="">地圖搜尋</a> </span>
+	</div>
+	  
+	  <div id="logo"> <a href=""> <img src="https://db.tt/MiJVRKZE" width=250></a>
+      </div>	
+      </div>
+  </nav>
+ 
+<article> 
+<div id="wrapper" class="container_12">
+
+  <section id="section_1" class="container_12">
+    <div class="grid_4">
+      <ul>
+        <li><a href="#">手機</a></li>
+        <ul>
+          <li><a href="#">iPhone</a></li>
+          <li><a href="#">HTC</a></li>
+          <li><a href="#">Sony</a></li>
+          <li><a href="#">Nokia</a></li>
+        </ul>
+      </ul>
+    </div>
+    <div class="grid_4">
+      <ul>
+        <li><a href="#">證件</a></li>
+        <ul>
+          <li><a href="#">身分證</a></li>
+          <li><a href="#">健保卡</a></li>
+          <li><a href="#">護照</a></li>
+          <li><a href="#">學生證</a></li>
+        </ul>
+      </ul>
+    </div>
+    <div class="grid_4">
+      <ul>
+        <li><a href="#">包包</a></li>
+        <ul>
+          <li><a href="#">卡片夾</a></li>
+          <li><a href="#">零錢包</a></li>
+          <li><a href="#">後背包</a></li>
+          <li><a href="#">手提包</a></li>
+          <li><a href="#">側背包</a></li>
+        </ul>
+      </ul>
+    </div>
+  </section>
+  
+  <div class="grid_12"></div>
+
+  
+  <section id="section_2" class="container_12">
+
+    <div class="grid_4">
+      <label for="triggerWords">失物關鍵字:</label>
+      <input type="text" class="searchInput" name="x" size="25" maxlength="120" />
+    </div>
+    <div class="grid_4">
+      <label for="lostTime">遺失時間 :</label>
+      <input type="date" class="searchInput" name="x" size="25" maxlength="120" />
+    </div>
+    <div class="grid_4">
+      <label for="lostPosition"> 遺失地點:</label>
+      <input type="text" class="searchInput" name="x" size="25" maxlength="120" />
+    </div>
+  </section>
+ 
+  <div class="grid_12"></div>
+  <div class="clear"></div>
+  
+  <section>
+    <div align="center">
+      <input type="submit" value="搜尋" type="button" id="button">
+    </div>
+	
+  </section>
+  
+   <div class="grid_12"></div>
+  
+<div class="clear"></div>
+<section>
+    
+      <table align="center" class="table" cellspacing="5" cellpadding="6">
+        <tr id="title_table" align="center" valign="middle" >
+          <td>編號</a></td>
+          <td>日期</a></td>
+          <td>地點</a></td>
+          <td>物品名稱</a></td>
+          <td>物品描述</a></td>
+          <td>保管地點</a></td>
+        </tr>
+        <tr align="center" valign="middle">
+          <td>00000001</td>
+          <td>2014/01/01</td>
+          <td>台北市政治大學校門口</td>
+          <td><a href="lostitem.html" target="_blank">手機</a></td>
+          <td>iPhone5s 黑色</td>
+          <td><a data-toggle="modal" data-target="#myModal">文山一分局</a></td>
+        </tr>
+        <tr align="center" valign="middle">
+          <td>00000002</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr align="center" valign="middle">
+          <td>00000003</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr align="center" valign="middle">
+          <td>00000004</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr align="center" valign="middle">
+          <td>00000005</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr align="center" valign="middle">
+          <td>00000006</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr align="center" valign="middle">
+          <td>00000007</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr align="center" valign="middle">
+          <td>00000008</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr align="center" valign="middle">
+          <td>00000009</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr align="center" valign="middle">
+          <td>00000010</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+          <td>&nbsp;</td>
+        </tr>
+      </table>
+    </section>
+  
+<section class="container_12">
+    <div class="grid_12  push_1" align="center">
+      <ul class="pagination">
+        <li><a href="#">&laquo;</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">&raquo;</a></li>
+      </ul>
+    </div>
+  </section>
+  
+ </div>
+</article>   
+  
+  <footer>
+    <div class="container_12">
+        <p>National Chengchi University</p>
+        <p>Web Programming Project</p>
+      </div>
+    </div>    
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        </div>
+        <iframe src="pd.html" style="width:100%;height:550px;margin:5px auto;border:0px;"></iframe>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
